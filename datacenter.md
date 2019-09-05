@@ -1,5 +1,7 @@
 # Datacenter
 
+:o2: please fix hyperlinks
+
 ## Carbon emission of a data center
 
 **Data center:** Ashburn VA3
