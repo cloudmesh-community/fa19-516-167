@@ -34,7 +34,7 @@ $11,324,928 MM/yr = [(16,000kW) * ($.0808/kWh) * (365 days) * (24 hours/day)]
 
 Wind energy operates on the principle of using moving air (wind) to spin a propeller, which is connected to a rotor that turns the arm of a generator to produce electricity.
 
-According to Sebastian Moss of DatacenterDynamics.com, Google and Facebook are partnering with Norwegian wind farms to help power its data centers. Additionally, Salesforce is partnering with a Canadian company to help power data centers.
+According to Sebastian Moss of DatacenterDynamics.com, Google and Facebook are partnering with Norwegian wind farms to help power their data centers. Additionally, Salesforce is partnering with a Canadian company to help power its data centers.
 
 
 **References**  
