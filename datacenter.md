@@ -60,11 +60,19 @@ centers which was initiated after smoke was detected following routine maintenan
 
 ## References
 
-1. Ragingwire ashburn virginia data center specs. <https://www.ragingwire.com/sites/default/files/ragingwire-ashburn-virginia-data-center.pdf>
-2. Commercial Electricity Rates & Consumption in Virginia. <https://www.electricitylocal.com/states/virginia/>
-3. U.S. Energy Information Administration, Virginia Electricity Profile 2017. <https://www.eia.gov/electricity/state/virginia/>
-4. Greenhouse Gases Equivalencies Calculator - Calculations and References. <https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references>
-5. U.S. Dept. of Energy. <https://www.energy.gov/maps/how-does-wind-turbine-work>
-6. DatacenterDynamics.com. <https://www.datacenterdynamics.com/news/windcores-project-deploys-small-data-centers-inside-wind-turbines/>
-7. Rhode Island Profile State Profile and Energy Estimates <https://www.eia.gov/state/analysis.php?sid=RI>
-8. Wells Fargo Provides Update on Restoring Services for Customers <https://newsroom.wf.com/press-release/corporate-and-financial/wells-fargo-provides-update-restoring-services-customers-0>
+1. Ragingwire ashburn virginia data center specs. 
+   <https://www.ragingwire.com/sites/default/files/ragingwire-ashburn-virginia-data-center.pdf>
+2. Commercial Electricity Rates & Consumption in Virginia. 
+   <https://www.electricitylocal.com/states/virginia/>
+3. U.S. Energy Information Administration, Virginia Electricity Profile 2017.
+   <https://www.eia.gov/electricity/state/virginia/>
+4. Greenhouse Gases Equivalencies Calculator - Calculations and References. 
+   <https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references>
+5. U.S. Dept. of Energy. 
+   <https://www.energy.gov/maps/how-does-wind-turbine-work>
+6. DatacenterDynamics.com. 
+   <https://www.datacenterdynamics.com/news/windcores-project-deploys-small-data-centers-inside-wind-turbines/>
+7. Rhode Island Profile State Profile and Energy Estimates 
+   <https://www.eia.gov/state/analysis.php?sid=RI>
+8. Wells Fargo Provides Update on Restoring Services for Customers 
+   <https://newsroom.wf.com/press-release/corporate-and-financial/wells-fargo-provides-update-restoring-services-customers-0>
