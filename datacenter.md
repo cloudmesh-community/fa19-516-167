@@ -54,7 +54,7 @@ an adequate renewable energy supply, then by 2035 the state will have achieved i
 ##  E.Datacenter.8 - Wells Fargo data center outage
 
 On February 7, 2019, Wells Fargo published a press release confirming a large-scale outage in one of its data 
-centers which was initiated after smoke was detected following routine maintenance. According the the press release the impact of the outage affected the following services:
+centers which was initiated after smoke was detected following routine maintenance. According to the press release the impact of the outage affected the following services <sup>8</sup>:
 
 - Wells Fargo ATM services.
 - Mobile and Online Banking systems
