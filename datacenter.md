@@ -6,7 +6,7 @@ Carbon emission of a data center
 
 | Attribute | Value |
 | --- | --- |
-| Data center: Ashburn VA3 | 
+| Data center | Ashburn VA3 | 
 | Organization | Raging Wire Data Centers |
 | Location | Ashburn, Va |
 | Year Build | 2017 |
