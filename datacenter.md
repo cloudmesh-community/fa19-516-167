@@ -58,7 +58,8 @@ centers which was initiated after smoke was detected following routine maintenan
 - Contact center systems
 
 
-**References**  
+## References
+
 1. Ragingwire ashburn virginia data center specs. <https://www.ragingwire.com/sites/default/files/ragingwire-ashburn-virginia-data-center.pdf>
 2. Commercial Electricity Rates & Consumption in Virginia. <https://www.electricitylocal.com/states/virginia/>
 3. U.S. Energy Information Administration, Virginia Electricity Profile 2017. <https://www.eia.gov/electricity/state/virginia/>
