@@ -4,19 +4,15 @@ Carbon emission of a data center
 
 ## E.Datacenter.2.a - Ashburn VA3
 
-**Data center:** Ashburn VA3
-
-**Organization:** Raging Wire Data Centers
-
-**Location:** Ashburn, Va
-
-**Year Build:** 2017
-
-**Electricity Cost ($/kW):**  $.0808/kWh
-
-**IT Load (kW):**  16,000kW 
-
-**Yearly Cost ($):**  $11,324,928 MM/yr
+| Attribute | Value |
+| --- | --- |
+| Data center: Ashburn VA3 | 
+| Organization | Raging Wire Data Centers |
+| Location | Ashburn, Va |
+| Year Build | 2017 |
+| Electricity Cost ($/kW) |  $.0808/kWh |
+| IT Load (kW) |  16,000kW |
+| Yearly Cost ($) |  $11,324,928 MM/yr |
 
 ```
 $11,324,928 MM/yr = [(16,000kW) * ($.0808/kWh) * (365 days) * (24 hours/day)]
