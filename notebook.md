@@ -1,6 +1,7 @@
-# Weekly Progress Notebook
+# fa19-516-167
 
 ## Week 1
+
 **Objective:** Course introduction, setup accounts for course, publish bio
 
 **Assignments:** 
@@ -12,6 +13,7 @@
 - [x] Install an ePub Reader [using IE Edge]
 
 ## Week 2
+
 **Objective:** Understanding Data Centers 
 
 **Assignments:**
@@ -23,4 +25,5 @@
 - [x] [E.Datacenter.8](datacenter.md)
 
 ## Week 3
+
 **Objective:** 
