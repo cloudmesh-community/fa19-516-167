@@ -26,4 +26,14 @@
 
 ## Week 3
 
-**Objective:** 
+**Objective:** Cloud Computing Architectures
+
+**Assignments:**
+- [ ] E.Cloudmesh.Common.1
+- [ ] E.Cloudmesh.Common.2
+- [ ] E.Cloudmesh.Common.3
+- [ ] E.Cloudmesh.Common.4
+- [ ] E.Cloudmesh.Common.5
+- [ ] E.Cloudmesh.Shell.1
+- [ ] E.Cloudmesh.Shell.2
+- [ ] E.Cloudmesh.Shell.3
