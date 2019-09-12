@@ -1,5 +1,7 @@
 # Datacenter fa19-516-167
 
+:o2: please fix urls
+
 Carbon emission of a data center
 
 ## E.Datacenter.2.a - Ashburn VA3
