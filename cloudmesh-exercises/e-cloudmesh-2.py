@@ -1,4 +1,5 @@
 # fa19-516-167 E.Cloudmesh.Common.2
+# Objective: Develop a program that demonstartes the use of dotdict.
 
 # Imports
 from cloudmesh.common.dotdict import dotdict
