@@ -1,38 +1,5 @@
-
 # fa19-516-167 E.Cloudmesh.Common.1
 # Objective: Develop a program that demonstartes the use of banner, HEADING, and VERBOSE
-
-# ----------
-# My Notes
-# ----------
-
-# Set env to Python 3.7
-# pyenv global 3.7.4
-
-# Create local directory named cm
-# mkdir cm
-
-# Change into cm directory
-# cd cm
-
-# Install cloudmesh-installer
-# pip install cloudmesh-installer
-
-# Checkout the bundles it comes with
-# cloudmesh-installer bundles
-
-# Clone the CloudMesh repo to the cm folder
-# cloudmesh-installer git clone cms
-
-# Install CloudMesh project in editable mode
-# cloudmesh-installer install cms -e
-
-# Validate the CloudMesh install worked
-# cms help
-
-# ----------
-
-# Let's write some code!
 
 # Import CM console package
 from cloudmesh.common.console import Console
@@ -67,10 +34,5 @@ print ("Cloud Computing E516 | Bill Screen | Fall 2019")
 from cloudmesh.common.debug import VERBOSE
 
 # Create sample verbose log output
-key_value = {"Registry‎": "‎NCC-1701-D"}
+key_value = {"Registry": "NCC-1701-D"}
 VERBOSE(key_value)
-
-# ----------
-
-# Run to execute
-# python ./cloudmesh-exercises/e-cloudmesh-1.py
