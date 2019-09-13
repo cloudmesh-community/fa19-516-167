@@ -1,8 +1,9 @@
-# fa19-516-167 E.Cloudmesh.Common.2
-# Objective: Develop a program that demonstartes the use of dotdict.
+# fa19-516-167
+# E.Cloudmesh.Common.3
+# Objective: Develop a program that demonstartes the use of FlatDict.
 
 # Imports
-from cloudmesh.common.dotdict import dotdict
+from cloudmesh.common.FlatDict import FlatDict #there is a typo in the book 'Flatdict'
 
 # Sample JSON data
 data = [
@@ -26,7 +27,7 @@ data = [
   }}
 ]
 
-# Convert to dotdict and Print JSON data
-dotdict_data = dotdict(data[0])
-print(type(dotdict_data))
-print(dotdict_data)
+# Convert to FlatDict and Print JSON data
+flatdict_data = FlatDict(data[0])
+print(type(flatdict_data))
+print(flatdict_data)
