@@ -1,4 +1,4 @@
-# Cloudmesh Virtual Directory Time to Live Service
+# Cloudmesh Virtual Directory Life Cycle Service
 
 Bill Screen
 
