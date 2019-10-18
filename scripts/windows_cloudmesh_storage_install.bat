@@ -1,7 +1,7 @@
 @echo off
 
 :: ----------------------------------------------------------------------------------------------------
-:: Purpose: Install Cloudmesh Storage package. This script will install Cloudmesh, MongoDb, and generate 
+:: Purpose: Install Cloudmesh Storage package. This script will install Cloudmesh Storage, MongoDb, and generate 
 :: a plugin directory on Windows OS
 :: Date: 2019-10-18
 :: Author: wscreen
