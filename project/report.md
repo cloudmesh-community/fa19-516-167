@@ -11,6 +11,7 @@ TBD
 Integrate Cloudmesh with cloud service providers' object storage lifecycle management services to 
 effectively manage storage costs throughout their lifecycle. This service is intended to be added 
 to the Cloudmesh storage project https://github.com/cloudmesh/cloudmesh-storage 
+Implementation of lifecycle policies will be provided for AWS and Azure cloud providers, and locally if time permits.
 
 ## Motivation
 
@@ -33,11 +34,7 @@ TBD
 * cloudmesh storage
 * OpenAPI 3.0.2
 * REST
-* MongoDB
-* possibly cloudmesh flow or similar 
-* possibly crontab
-* possibly python multiprocessing
- 
+* MongoDB (if time permits) 
  
 ```
 Usage:
@@ -52,17 +49,6 @@ Arguments:
     LIFECYCLE_RULES: An XML document used to specify the lifecycle of the STORAGE_ID. For example:
 
     <LifecycleConfiguration>
-        <Rule>
-            <ID>id1</ID>
-            <Filter>
-                <Prefix>my_documents/</Prefix>
-            </Filter>
-            <Status>Enabled</Status>
-            <Transition>
-                <Days>30</Days>
-                <StorageClass>GLACIER</StorageClass>
-            </Transition>
-        </Rule>
         <Rule>
             <ID>id2</ID>
             <Filter>
@@ -99,9 +85,14 @@ Description:
         Returns the lifecycle configuration information set on the bucket.
 
 Example:
-    set storage_provider=aws|azure|gcp|box
+    set storage_provider=aws|azure
     storage_lifecycle_configuration put STORAGE_BUCKET_ID, LIFECYCLE_RULES
 ```
 
+## Progress
+
+**Week of 10/06:** After many struggles, finally got Cloudmesh and MongoDB to install on Windows 10 (call 'cms init' twice!). Automated the install process via a batch script. Also added logic to validate connectivity to chameleon Cloud by executing 'image' and 'flavor' list commands. 
+
+**Week of 10/13:** Reviewing the cloudmesh storage source code to understand the Python coding design pattern to follow for this project. Also trying to understand how to use VS Code debugger with CM source code, and how to setup pytests. 
 
  
