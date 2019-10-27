@@ -67,6 +67,49 @@ Example:
     storagelifecycle put "gcp" "cloudmesh-bucket-001" --lifecycle_config="C:\\mydir\\gcp_lifecycle_config.json"                        
     storagelifecycle get "gcp" "cloudmesh-bucket-001"
     storagelifecycle delete "gcp" "cloudmesh-bucket-001"
+
+    For advanced storage lifecycle configurations, use the  --lifecycle_config FILE option:
+    
+    Example Google lifecycle config:
+    {
+        "lifecycle": {
+            "rule": [
+                        {
+                            "action": {
+                                "type": "SetStorageClass",
+                                "storageClass": "NEARLINE"
+                            },
+                            "condition": {
+                            "age": 365,
+                            "matchesStorageClass": ["MULTI_REGIONAL", "STANDARD", "DURABLE_REDUCED_AVAILABILITY"]
+                            }
+                        }
+            ]
+        }
+    }
+
+    Example AWS lifecycle config:
+    {
+    "Rules": [
+        {
+            "Filter": {
+                "Prefix": "documents/"
+            },
+            "Status": "Enabled",
+            "Transitions": [
+                {
+                    "Days": 365,
+                    "StorageClass": "GLACIER"
+                }
+            ],
+            "Expiration": {
+                "Days": 3650
+            },
+            "ID": "ExampleRule"
+        }
+    ]}
+
+
 ```
 
 ## Progress
