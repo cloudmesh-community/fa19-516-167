@@ -35,38 +35,38 @@ TBD
 * MongoDB (if time permits) 
  
 ```
-        Usage:
-            storagelifecycle put SERVICE STORAGE_BUCKET_NAME (--expiry_in_days=NUM_DAYS | --lifecycle_config FILE)
-            storagelifecycle get SERVICE STORAGE_BUCKET_NAME            
-            storagelifecycle delete SERVICE STORAGE_BUCKET_NAME 
+Usage:
+    storagelifecycle put SERVICE STORAGE_BUCKET_NAME (--expiry_in_days=NUM_DAYS | --lifecycle_config FILE)
+    storagelifecycle get SERVICE STORAGE_BUCKET_NAME            
+    storagelifecycle delete SERVICE STORAGE_BUCKET_NAME 
 
-        Options:
-            --expiry_in_days=NUM_DAYS   Days until objects in bucket are removed
-            --lifecycle_config FILE     File containing storage lifecycle rules for bucket or objects in bucket
+Options:
+    --expiry_in_days=NUM_DAYS   Days until objects in bucket are removed
+    --lifecycle_config FILE     File containing storage lifecycle rules for bucket or objects in bucket
 
-        Arguments:
-            SERVICE                 Name of the cloud service provider (i.e. aws, gcp, azure)
-            STORAGE_BUCKET_NAME     Id of the cloud service provider bucket
-            NUM_DAYS                NUMBER OF DAYS
+Arguments:
+    SERVICE                 Name of the cloud service provider (i.e. aws, gcp, azure)
+    STORAGE_BUCKET_NAME     Id of the cloud service provider bucket
+    NUM_DAYS                NUMBER OF DAYS
 
-        Description:
-            Manage cloud service provider objects so that they are stored cost-effectively throughout their lifecycle.
-            AWS and GCP are currently supported.
-    
-            storagelifecycle put SERVICE STORAGE_BUCKET_NAME (--expiry_in_days=NUM_DAYS | --lifecycle_config FILE)
-                Creates a new lifecycle configuration for the bucket or replaces an existing lifecycle configuration.
-        
-            storagelifecycle delete SERVICE STORAGE_BUCKET_NAME
-                Removes all the lifecycle configuration rules in the lifecycle subresource associated with the (STORAGE_ID).
-        
-            storagelifecycle get SERVICE STORAGE_BUCKET_NAME
-                Returns the lifecycle configuration information set on the bucket.
+Description:
+    Manage cloud service provider objects so that they are stored cost-effectively throughout their lifecycle.
+    AWS and GCP are currently supported.
 
-        Example:
-            storagelifecycle put "gcp" "cloudmesh-bucket-001" --expiry_in_days=90
-            storagelifecycle put "gcp" "cloudmesh-bucket-001" --lifecycle_config="C:\\mydir\\gcp_lifecycle_config.json"                        
-            storagelifecycle get "gcp" "cloudmesh-bucket-001"
-            storagelifecycle delete "gcp" "cloudmesh-bucket-001"
+    storagelifecycle put SERVICE STORAGE_BUCKET_NAME (--expiry_in_days=NUM_DAYS | --lifecycle_config FILE)
+        Creates a new lifecycle configuration for the bucket or replaces an existing lifecycle configuration.
+
+    storagelifecycle delete SERVICE STORAGE_BUCKET_NAME
+        Removes all the lifecycle configuration rules in the lifecycle subresource associated with the (STORAGE_ID).
+
+    storagelifecycle get SERVICE STORAGE_BUCKET_NAME
+        Returns the lifecycle configuration information set on the bucket.
+
+Example:
+    storagelifecycle put "gcp" "cloudmesh-bucket-001" --expiry_in_days=90
+    storagelifecycle put "gcp" "cloudmesh-bucket-001" --lifecycle_config="C:\\mydir\\gcp_lifecycle_config.json"                        
+    storagelifecycle get "gcp" "cloudmesh-bucket-001"
+    storagelifecycle delete "gcp" "cloudmesh-bucket-001"
 ```
 
 ## Progress
