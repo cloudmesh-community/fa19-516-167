@@ -1,4 +1,4 @@
-# Cloudmesh Virtual Directory Life Cycle Service
+# Cloudmesh Object Life Cycle Management Service
 
 Bill Screen
 
