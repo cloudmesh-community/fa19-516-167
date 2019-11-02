@@ -85,7 +85,7 @@ class TestStorageLifecycleAWS(object):
     def test_delete_storage_bucket(self):
         ''' Delete AWS Storage Bucket '''
 
-        # Create the bucket (must be globally unique name)
+        # Delete the bucket 
         result = self.s3_client.delete_bucket(Bucket=self.storage_bucket)
 
         # Evaluate result
