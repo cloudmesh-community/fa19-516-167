@@ -71,43 +71,48 @@ Example:
     For advanced storage lifecycle configurations, use the  --lifecycle_config FILE option:
     
     Example Google lifecycle config:
-    {
-        "lifecycle": {
-            "rule": [
-                        {
-                            "action": {
-                                "type": "SetStorageClass",
-                                "storageClass": "NEARLINE"
-                            },
-                            "condition": {
-                            "age": 365,
-                            "matchesStorageClass": ["MULTI_REGIONAL", "STANDARD", "DURABLE_REDUCED_AVAILABILITY"]
-                            }
-                        }
-            ]
-        }
+    { 
+    "lifecycle":{ 
+        "rule":[ 
+            { 
+                "action":{ 
+                "type":"SetStorageClass",
+                "storageClass":"NEARLINE"
+                },
+                "condition":{ 
+                "age":365,
+                "matchesStorageClass":[ 
+                    "MULTI_REGIONAL",
+                    "STANDARD",
+                    "DURABLE_REDUCED_AVAILABILITY"
+                ]
+                }
+            }
+        ]
+    }
     }
 
     Example AWS lifecycle config:
-    {
-    "Rules": [
-        {
-            "Filter": {
-                "Prefix": "documents/"
+    { 
+    "Rules":[ 
+        { 
+            "Filter":{ 
+                "Prefix":"documents/"
             },
-            "Status": "Enabled",
-            "Transitions": [
-                {
-                    "Days": 365,
-                    "StorageClass": "GLACIER"
+            "Status":"Enabled",
+            "Transitions":[ 
+                { 
+                "Days":365,
+                "StorageClass":"GLACIER"
                 }
             ],
-            "Expiration": {
-                "Days": 3650
+            "Expiration":{ 
+                "Days":3650
             },
-            "ID": "ExampleRule"
+            "ID":"ExampleRule"
         }
-    ]}
+    ]
+    }
 
 
 ```
