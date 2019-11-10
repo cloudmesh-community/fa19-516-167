@@ -38,7 +38,7 @@ class TestStorageLifecycleAWS(object):
 
 
     def test_create_storage_bucket(self):
-        ''' Create AWS Storage Bucket '''
+        ''' Create Storage Bucket '''
 
         # Create the bucket (must be globally unique name)
         result = self.s3_client.create_bucket(Bucket=self.storage_bucket)
@@ -49,7 +49,7 @@ class TestStorageLifecycleAWS(object):
 
 
     def test_create_storage_lifecycle_policy(self):
-        ''' Create AWS Storage Lifecycle Policy '''
+        ''' Create Storage Lifecycle Policy '''
 
         # Execute CMS command 
         result=Shell.execute("cms",["storagelifecycle","put","aws",self.storage_bucket,
@@ -61,7 +61,7 @@ class TestStorageLifecycleAWS(object):
 
      
     def test_get_storage_lifecycle_policy(self):
-        ''' Return AWS Storage Lifecycle Policy details '''
+        ''' Return Storage Lifecycle Policy details '''
 
         # Execute CMS command 
         result=Shell.execute("cms",["storagelifecycle","get","aws",self.storage_bucket])
@@ -72,7 +72,7 @@ class TestStorageLifecycleAWS(object):
 
     
     def test_delete_storage_lifecycle_policy(self):
-        ''' Delete AWS Storage Lifecycle Policy '''
+        ''' Delete Storage Lifecycle Policy '''
 
         # Execute CMS command 
         result=Shell.execute("cms",["storagelifecycle","delete","aws",self.storage_bucket])
@@ -83,7 +83,7 @@ class TestStorageLifecycleAWS(object):
 
 
     def test_delete_storage_bucket(self):
-        ''' Delete AWS Storage Bucket '''
+        ''' Delete Storage Bucket '''
 
         # Delete the bucket 
         result = self.s3_client.delete_bucket(Bucket=self.storage_bucket)
