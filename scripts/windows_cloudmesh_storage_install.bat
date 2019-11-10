@@ -163,11 +163,16 @@ type NUL >> cloudmesh-mycommand\cloudmesh\mycommand\providers\gcp\Provider.py
 cms mycommand list
 
 :: --------------------------------------------------	
-:: Prefetch some certs you may need
+:: Install Boto3, the Amazon Web Services (AWS) 
+:: Software Development Kit (SDK) for Python 
 :: --------------------------------------------------
-:: WGET amazon cert ~/.cloudmesh/aws_cert.pem
-:: WGET azure cert
-:: WGET gcp cert
+pip install boto3
+
+:: --------------------------------------------------	
+:: Install gsutil, a Python application that lets you
+:: access Google Cloud Storage from the command line
+:: --------------------------------------------------
+pip install gsutil
 
 :: --------------------------------------------------	
 :: Install Pytest

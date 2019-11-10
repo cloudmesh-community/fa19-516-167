@@ -1,38 +1,34 @@
 # Cloudmesh Object Life Cycle Management Service
 
-Bill Screen
+Bill Screen | wscreen@iu.edu | Indiana University | hid: fa19-516-167
 
 ## Abstract
 
-TBD
+As the volume of data being generated and stored by cloud service providers (CSP) continues to grow at a rapid pace, managing the lifecycle of stored data in a thoughtful manner becomes necessary to control costs and accurately forecast spending. 
 
-## Objective
+According to the VisualCapitalist.com, "By 2025, it’s estimated that 463 exabytes of data will be created each day globally – that’s the equivalent of 212,765,957 DVDs per day!" As of 11/2019, it currently costs ~$20,000 USD to store 1 PB of data in the cloud.
 
-Integrate Cloudmesh with cloud service providers' object storage lifecycle management services to 
-effectively manage storage costs throughout their lifecycle. This service is intended to be added 
-to the Cloudmesh storage project https://github.com/cloudmesh/cloudmesh-storage 
-Implementation of lifecycle policies will be provided for AWS and Azure cloud providers, and locally if time permits.
+Without a data lifecycle management strategy, objects sent to a CSP could be stored indefinitely. Even if the objects (data) are infrequently or never accessed, the customer will likely be charged for storage (beyond a certain 'free storage limit'). This will ultimately lead to 'sloppy storage' and the 'deletion dilemma'. 
 
-## Motivation
+By strategically applying a lifecycle storage policy to control costs and accurately forecast spending, organizations can prevent cost overruns and are better positioned to successfully manage their data in the cloud. Storage lifecycle policies will be particularly important for government organizations and public universities who store large amounts of data but typically have limited budgets. 
 
-As the volume of data being generated and stored by cloud service providers (CSP) continues 
-to grow, the cost to store the data needs to be managed in a thoughtful manner. Without a 
-data lifecycle management strategy, objects sent to a CSP could be stored indefinitely; even 
-if the objects (data) are infrequently or never accessed, the customer will likely be charged 
-for storage (beyond a certain 'free storage limit'). Thus applying a lifecycle storage policy will 
-help to mitigate cost overruns by applying 'lifecycle rules' to efficiently manage objects stored in 
-the cloud. For example, a lifecycle rule may schedule an object for deletion after 30 days or automatically
-move the object to a lower-cost storage tier after 90 days.
+## Introduction
 
- 
+Integrate Cloudmesh with cloud service providers' object storage lifecycle management services to effectively manage storage costs throughout their lifecycle. This service is intended to be used in conjunction with to the Cloudmesh storage project https://github.com/cloudmesh/cloudmesh-storage
+
+Implementation of lifecycle policies will be provided for AWS and GCP in the initial release. 
+
+
+
 ## Architecture
 
-TBD
+![Project Architecture](images/cm-storage-lifecycle.png)
+
+This service provides a standard command-line interface that allows you to set the storage lifecycle policy rules for storage buckets in multiple CSPs.
+
 
 ## Technologies
-
 * cloudmesh storage
-* MongoDB (if time permits) 
  
 ```
 Usage:
@@ -117,6 +113,13 @@ Example:
 
 ```
 
+Supporting Documentation:
+https://docs.aws.amazon.com/AmazonS3/latest/dev/intro-lifecycle-rules.html
+
+https://www.visualcapitalist.com/how-much-data-is-generated-each-day/
+
+
+
 ## Progress
 
 **Week of 10/06:** After many struggles, finally got Cloudmesh and MongoDB to install on Windows 10 (call 'cms init' twice!). Automated the install process via a batch script. Also added logic to validate connectivity to chameleon Cloud by executing 'image' and 'flavor' list commands. 
@@ -124,3 +127,18 @@ Example:
 **Week of 10/13:** Reviewing the cloudmesh storage source code to understand the Python coding design pattern to follow for this project. Also trying to understand how to use VS Code debugger with CM source code, and how to setup pytests. 
 
 **Week of 10/20:** Implemented initial Provider design for AWS and Google Cloud Platform. Code clean up. Will start on pytest cases next week.
+
+
+
+Abstract
+Introduction
+Design
+    Architecture
+Implementation
+    Technologies Used
+Results
+    Deployment Benchmarks
+    Application Benchmarks
+(Limitations)
+Conclusion
+(Work Breakdown)
