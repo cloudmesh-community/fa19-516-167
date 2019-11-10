@@ -14,10 +14,11 @@ By strategically applying a lifecycle storage policy to control costs and accura
 
 ## Introduction
 
-Integrate Cloudmesh with cloud service providers' object storage lifecycle management services to effectively manage storage costs throughout their lifecycle. This service is intended to be used in conjunction with to the Cloudmesh storage project https://github.com/cloudmesh/cloudmesh-storage
+The goal of this project is to build a solution which adds Storage Lifecycle Management service functionality to Cloudmesh. This solution will allow users to manage storage lifecyles in multiple cloud service providers.
 
-Implementation of lifecycle policies will be provided for AWS and GCP in the initial release. 
+This service is intended to be used in conjunction with the Cloudmesh storage project https://github.com/cloudmesh/cloudmesh-storage
 
+Implementation of lifecycle policies will be provided for AWS and GCP in the initial release.
 
 
 ## Architecture
