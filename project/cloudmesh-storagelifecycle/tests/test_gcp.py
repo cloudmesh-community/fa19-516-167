@@ -8,10 +8,9 @@ NOTE: need to install gsutil prior to execution --> pip install gsutil
 
 """
 import os
-import pytest
 import json
+import pytest
 import random
-import boto3
 from cloudmesh.common.Shell import Shell
 from cloudmesh.configuration.Config import Config
 from cloudmesh.compute.vm.Provider import Provider
@@ -27,7 +26,7 @@ class TestStorageLifecycleGCP(object):
         self.storage_lifespan = random.randint(1, 365)
 
         # Set constants
-        self.GCP_PROJECT_ID = 'cloudmesh-storagelifecycle'        
+        self.GCP_PROJECT_ID = 'cloudmesh-storagelifecycle'
         self.SERVICE_CLI = 'gsutil'
         self.STORAGE_BUCKET_PROTOCOL = 'gs://'
         self.SERVICE_COMMAND_CREATE_BUCKET = 'mb'
