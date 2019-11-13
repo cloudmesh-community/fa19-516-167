@@ -15,7 +15,7 @@ python -m pip install --upgrade pip
 :: Create the cloudmesh workspace directory
 :: Note: Do NOT use the word 'cloudmesh' or an underscore '_'
 :: --------------------------------------------------
-mkdir cm
+mkdir cm 
 
 :: --------------------------------------------------
 :: Change to the cloudmesh workspace directory
