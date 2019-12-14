@@ -1,18 +1,12 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-# Futures
-from __future__ import unicode_literals
 from __future__ import print_function
-
-# Generic/Built-in
-
-# Owned
-from cloudmesh.shell.command import command
+from cloudmesh.shell.command import command, map_parameters
 from cloudmesh.shell.command import PluginCommand
 from cloudmesh.storagelifecycle.Provider import Provider
-from cloudmesh.common.parameter import Parameter
-from cloudmesh.shell.command import command, map_parameters
+from cloudmesh.storagelifecycle.api.manager import Manager
+from cloudmesh.common.console import Console
+from cloudmesh.common.util import path_expand
+from pprint import pprint
+from cloudmesh.common.debug import VERBOSE
 
 class StoragelifecycleCommand(PluginCommand):
 
@@ -54,7 +48,7 @@ class StoragelifecycleCommand(PluginCommand):
             storagelifecycle get "gcp" "cloudmesh-bucket-001"
             storagelifecycle delete "gcp" "cloudmesh-bucket-001"
         """
-        
+
         # Map parameters with -- to regular argument dicts for easier processing.
         map_parameters(arguments,
                        "expiry_in_days",

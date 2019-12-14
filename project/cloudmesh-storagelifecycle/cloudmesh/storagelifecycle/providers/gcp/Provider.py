@@ -13,8 +13,8 @@ import os
 # Owned
 from cloudmesh.common.console import Console
 from cloudmesh.configuration.Config import Config
-from cloudmesh.common3.Shell import Shell
-from cloudmesh.storage.StorageABC import StorageABC
+from cloudmesh.common.Shell import Shell
+from cloudmesh.storagelifecycle.StorageABC import StorageABC
 
 class Provider(StorageABC):
     '''

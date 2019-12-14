@@ -28,6 +28,9 @@ def readfile(filename):
 # add minimum requirements here
 #
 requiers = """
+boto3
+gsutil
+pytest
 psutil
 pygments
 """.split("\n")

@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-# Futures
-from __future__ import unicode_literals
-from __future__ import print_function
-
 # Generic/Built-in
 import json
 import logging
@@ -13,7 +6,7 @@ import os
 # Owned
 from cloudmesh.common.console import Console
 from cloudmesh.configuration.Config import Config
-from cloudmesh.storage.StorageABC import StorageABC
+from cloudmesh.storagelifecycle.StorageABC import StorageABC
 
 # Other
 import boto3
@@ -42,8 +35,8 @@ class Provider(StorageABC):
         # Create client connection
         self.s3_client = boto3.client(
             's3',
-            aws_access_key_id = self.credentails["api_access_id"],
-            aws_secret_access_key = self.credentails["api_secret_key"],
+            aws_access_key_id = self.credentails["access_key_id"],
+            aws_secret_access_key = self.credentails["secret_access_key"],
             region_name = self.credentails["region"]
         )        
 
