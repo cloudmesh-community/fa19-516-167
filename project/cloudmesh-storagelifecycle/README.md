@@ -1,6 +1,6 @@
 # Cloudmesh Object Life Cycle Management Service
 
-Bill Screen | wscreen@iu.edu | Indiana University | hid: fa19-516-167
+Bill Screen, wscreen@iu.edu, Indiana University, hid: fa19-516-167
 
 ## Abstract
 
@@ -29,6 +29,7 @@ This service provides a standard command-line interface that allows you to set t
 
 
 ## Installation (on Windows)
+
 ```
 python -m venv env3
 env3\Scripts\activate
@@ -138,6 +139,7 @@ Example:
 ```
 
 ## Testing with Pytest
+
 ```
 pytest cloudmesh/storagelifecycle/tests/ -v -s -W ignore::DeprecationWarning --durations=10
 
@@ -147,7 +149,8 @@ pytest cloudmesh/storagelifecycle/tests/test_aws.py -v -s -W ignore::Deprecation
 pytest cloudmesh/storagelifecycle/tests/test_gcp.py -v -s -W ignore::DeprecationWarning --durations=10
 ```
 
-## Supporting Documentation:
+## References
+
 - https://docs.aws.amazon.com/AmazonS3/latest/dev/intro-lifecycle-rules.html
 - https://cloud.google.com/storage/docs/managing-lifecycles
 - https://www.visualcapitalist.com/how-much-data-is-generated-each-day/
